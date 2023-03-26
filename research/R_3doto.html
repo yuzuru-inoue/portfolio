@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Works/InoueYuzuru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./research.css">
+  <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
+  <!-- barba -->
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- IEでbarbaを読むためのpolyfill -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
+</head>
+
+<header>
+  <div class="header-right">
+    <a href="../about.html">about</a>
+    <a href="../index.html">works</a>
+    <a href="../research.html">reserch</a>
+  </div>
+
+</header>
+
+
+<body data-barba="wrapper">
+  <div data-barba="container" data-barba-namespace="production">
+
+    <div id="loading">
+
+   </div>
+
+    <div class="top-wrapper">
+      <div class="top-img" style="background-image: url(../img/research/oto3dP.jpg);">
+        <div class="black-filter">
+          <p class="page-title">3D音作り</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="abst-wrapper">
+        <p>概要</p>
+        <p>音の三要素は「高さ」「大きさ」「音色」である．これらの要素は音の周波数分布と時間軸方向の変化によって決まる．
+          本研究では，x軸を周波数軸に，z軸を時間軸に，y軸をパワースペクトルに適用したボックスの集合体をVR空間内で編集し，その変化に応じてサウンドデータがリアルタイムで編集されるシステムを提案する．
+          これにより，従来のものより直感的に音の編集ができることを期待する．</p>
+          <p>
+          ハンドトラッキングでボックスを編集する部分を制作したので，このボックスの変化に応じてサウンドデータを逆フーリエ変換し，リアルタイムで編集される音が聴こえるようにする．
+          左手のピンチで選択範囲を決定し，右手をピンチして上下に動かすことでボックスの高さを変化させているが，この辺の操作は検討中．一番手前のボックスのみリアルタイムで周波数分布を表示しているが，これを事前処理して時間軸方向に伸ばしたい．
+          </p>
+        <!-- <p>学会発表：井上弦，五十嵐悠紀．音作り初心者のためのエフェクト付与支援システムの検討．インタラクション2021論文集，2021，p.573-575．</p> -->
+        <!-- <p>PDFリンク : <a target="_blank" rel="noopener noreferrer" style="color:blue" href="http://www.interaction-ipsj.org/proceedings/2021/data/pdf/3B15.pdf">http://www.interaction-ipsj.org/proceedings/2021/data/pdf/3B15.pdf</a></p> -->
+      </div>
+
+    <div class="movie-wrapper">
+      <div class="youtube">
+        <iframe src="https://www.youtube.com/embed/XZpZ-x4XBoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/RdkV3_HASPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="https://www.youtube.com/embed/9pfANen2lxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="https://www.youtube.com/embed/gO2Aj-gIUKM?start=10801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="descr-wrapper">
+
+  </div>
+
+  </div>
+</body>
+
+<script type="text/javascript">
+ window.onload=function(){
+   document.getElementById('loading').classList.add('loaded');
+ }
+ </script>
+
+<footer>
+  <p>© 2021 Yuzuru Inoue</p>
+
+</footer>
+
+</html>
