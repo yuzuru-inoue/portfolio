@@ -4,17 +4,16 @@
 <head>
   <title>Research/InoueYuzuru</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+  <!-- css -->
   <link rel="stylesheet" href="./research.css">
-  <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
-  <!-- barba -->
-  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+
+  <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <!-- IEでbarbaを読むためのpolyfill -->
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
 </head>
 
 <header>
@@ -23,60 +22,41 @@
     <a href="./index.html">works</a>
     <a href="./research.html">reserch</a>
   </div>
-
 </header>
 
-<body data-barba="wrapper">
-  <div class="common-transition">
-
-
-  </div>
-
+<body>
   <div id="loading">
-
   </div>
-
-
-
-  <div data-barba="container" data-barba-namespace="research">
 
     <div class="top-wrapper">
-      <!-- <div class="container"> -->
         <h1>Research</h1>
-      <!-- </div> -->
     </div>
 
     <div class="main-wrapper">
-
-      <div class="current-wrapper">
+      <div class="current-wrapper"> <!-- 今の研究のwrapper -->
         <p>エフェクトデザイン支援</p>
+
         <a href="./research/R_VRvector.html">
           <div class="research-container">
             <p class="research-img" style="background-image: url(./img/research/vector_screenshot.png);"></p>
 
-            <div class="abst-wrapper">
+            <div class="abst-wrapper">  <!-- 研究題名 -->
               <p class="research-title">VR空間中でベクトル場を手で操作することによる3Dエフェクトデザインシステム</p>
 
-              <div class="research-intro">
+              <div class="research-intro">  <!-- 研究概要 -->
                 <p>VR空間中に敷き詰められているベクトル場をハンドジェスチャーで編集し，パーティクルの動きを制御するシステムです．</p>
                   <p></p>
-                </div>
-
-                <div class="research-conference">
-                  <!-- <p>インタラクション 2021</p>
-                  <p>デモ発表</p> -->
-                </div>
-
               </div>
+
             </div>
-          </a>
-
-
-
+          </div>
+        </a>
       </div>
 
-      <div class="ever-wrapper">
+      <div class="ever-wrapper">  <!-- 今までの研究，音楽初心者支援wrapper -->
         <p>音楽初心者支援</p>
+
+        <!---------------------- 3D音作り ---------------------->
         <a href="./research/R_3doto.html">
           <div class="research-container">
             <p class="research-img" style="background-image: url(./img/research/oto3dP.jpg);"></p>
@@ -88,17 +68,13 @@
                 <p>x軸を周波数軸に，z軸を時間軸に，y軸をパワースペクトルに適用したボックスの集合体をVR空間内で編集し，
                   その変化に応じてサウンドデータがリアルタイムで編集され，直感的に音作りができるシステム，になる予定でした．</p>
                   <p></p>
-                </div>
-
-                <div class="research-conference">
-                  <!-- <p>インタラクション 2021</p>
-                  <p>デモ発表</p> -->
-                </div>
-
               </div>
-            </div>
-          </a>
 
+            </div>
+          </div>
+        </a>
+
+        <!---------------------- 音作り初心者のためのエフェクト付与支援 ---------------------->
         <a href="./research/R_otodukuri.html">
           <div class="research-container">
             <p class="research-img" style="background-image: url(./img/research/oto.jpg);"></p>
@@ -119,6 +95,7 @@
           </div>
         </a>
 
+        <!---------------------- ピアノ強弱提示支援 ---------------------->
         <a href="./research/R_piano.html">
           <div class="research-container">
             <p class="research-img" style="background-image: url(./img/research/piano.jpg);"></p>
@@ -141,12 +118,12 @@
 
       </div>
     </div>
-
-    <footer>
-      <p>© 2021 Yuzuru Inoue</p>
-    </footer>
-
 </body>
+
+<footer>
+  <p>© 2021 Yuzuru Inoue</p>
+</footer>
+
 <script type="text/javascript">
 window.onload=function(){
   document.getElementById('loading').classList.add('loaded');

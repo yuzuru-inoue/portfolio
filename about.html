@@ -2,19 +2,18 @@
 <html>
 
 <head>
-  <title>Research/InoueYuzuru</title>
+  <title>About/InoueYuzuru</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+  <!-- css -->
   <link rel="stylesheet" href="./about.css">
-  <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
-  <!-- barba -->
-  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+
+  <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <!-- IEでbarbaを読むためのpolyfill -->
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
 </head>
 
 <header>
@@ -23,25 +22,17 @@
     <a href="./index.html">works</a>
     <a href="./research.html">reserch</a>
   </div>
-
 </header>
 
-<body data-barba="wrapper">
-  <div data-barba="container" data-barba-namespace="about">
-
-    <div id="loading">
-
-    </div>
+<body>
+    <div id="loading"></div>
 
     <div class="top-wrapper">
-      <!-- <div class="container"> -->
       <h1 id="about-text">About</h1>
-      <!-- </div> -->
     </div>
 
     <div class="main-wrapper">
       <div class="contents-wrapper">
-
         <div class="profile-wrapper">
           <h2>プロフィール</h2>
           <div class="profile-subjects">
@@ -53,8 +44,6 @@
             <p class="subject"><span>学年</span></p>
             <p><br></p>
             <p class="subject"><span>資格</span></p>
-
-
           </div>
 
           <div class="profile-contents">
@@ -70,7 +59,6 @@
             <p>画像処理エンジニア検定(エキスパート)</p>
             <p>色彩検定2級</p>
             <p>TOEIC 655点</p>
-
           </div>
         </div>
 
@@ -82,13 +70,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </body>
 
   <footer>
     <p>© 2021 Yuzuru Inoue</p>
   </footer>
 
   <script type="text/javascript">
+    // トップのAboutの文字と，プロフィールなどの文字列を左揃えするためのスクリプト．あとページ遷移も．
   window.onload=function(){
     document.getElementById('loading').classList.add('loaded');
   }
@@ -96,21 +85,14 @@
       const $topWidth = $('.top-wrapper').width();
       const $aboutWidth = $('#about-text').width();
       const marginLeft=$topWidth/2.0-$aboutWidth/2.0;
-      console.log(marginLeft);
       $('.contents-wrapper').css('margin-left',marginLeft);
-
 
       $(window).resize(function() {
         const $topWidth = $('.top-wrapper').width();
         const $aboutWidth = $('#about-text').width();
         const marginLeft=$topWidth/2.0-$aboutWidth/2.0;
-        console.log(marginLeft);
         $('.contents-wrapper').css('margin-left',marginLeft);
       });
     });
   </script>
-
-</body>
-
-
 </html>
